@@ -1,6 +1,5 @@
 {% set version = '1.1.2' %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-xgxr
@@ -13,8 +12,7 @@ source:
   sha256: fba919415726ed5ff80db1e7b207aaf633789a2e760f7adda2149fa5be81b656
 
 build:
-  merge_build_host: True  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
