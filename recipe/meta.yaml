@@ -1,4 +1,4 @@
-{% set version = '1.1.2' %}
+{% set version = "1.1.6" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/xgxr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/xgxr/xgxr_{{ version }}.tar.gz
-  sha256: fba919415726ed5ff80db1e7b207aaf633789a2e760f7adda2149fa5be81b656
+  sha256: be835ab33c585d1b7252e558dae6ac08ad5c5c173414367916b5ec11b6d33baa
 
 build:
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -74,13 +74,9 @@ about:
   home: https://opensource.nibr.com/xgx/
   dev_url: https://github.com/Novartis/xgxr
   license: MIT
-  summary: Supports a structured approach for exploring PKPD data <https://opensource.nibr.com/xgx/>.
-    It also contains helper functions for enabling the modeler to follow best R practices
-    (by appending the program name, figure name location, and draft status to each plot).
-    In addition, it enables the modeler to follow best graphical practices (by providing
-    a theme that reduces chart ink, and by providing time-scale, log-scale, and reverse-log-transform-scale
-    functions for more readable axes). Finally, it provides some data checking and summarizing
-    functions for rapidly exploring pharmacokinetics and pharmacodynamics (PKPD) datasets.
+  summary: Supports a structured approach for exploring PKPD data <https://opensource.nibr.com/xgx/>. It also contains helper functions for enabling the modeler to follow best R practices (by appending the program name, figure name location, and draft status to each plot). In addition, it enables the modeler to follow 
+    best graphical practices (by providing a theme that reduces chart ink, and by providing time-scale, log-scale, and reverse-log-transform-scale functions for more readable axes). Finally, it provides some data checking and summarizing functions for rapidly exploring pharmacokinetics and pharmacodynamics (PKPD) 
+    datasets.
   license_family: MIT
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
